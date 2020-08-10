@@ -63,6 +63,19 @@ transform: translateX(-50%)
 }
 
 
+
+@media screen and (min-height: 568px) {
+ .table {
+   top: 60%;
+}  
+}
+
+@media screen and (min-height: 800px) {
+ .table {
+   top: 35%;
+}
+}
+
 @media screen and (min-height: 1350px) {
  .table {
    top: 40%;
@@ -70,15 +83,4 @@ transform: translateX(-50%)
   .main {
     padding: 400px 0px 100px;
 }
-}
-
-@media screen and (min-height: 800px) {
- .table {
-   top: 35%;
-}
-  
-@media screen and (min-height: 568px) {
- .table {
-   top: 60%;
-}  
 }
