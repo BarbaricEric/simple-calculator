@@ -72,7 +72,7 @@ transform: translateX(-50%)
 }
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (min-height: 800px) {
  .table {
    top: 35%;
 }
