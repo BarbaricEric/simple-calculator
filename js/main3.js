@@ -1,4 +1,13 @@
 const number = document.form.textview;
+const BROSWERSUPPORT = document.querySelector('.banner-support');
+
+//Warning Message: Supported Browser
+function browseView() {
+    BROSWERSUPPORT.style.display = 'none';
+}
+
+//Browser Support Banner Time Interval
+setTimeout(() => {browseView();}, 5.0*1000);
 
 /* Input Values */
 function insert(num) {
