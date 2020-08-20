@@ -71,7 +71,7 @@ transform: translateX(-50%)
  display: flex;
  justify-content: center;
  align-items: center;
- background: #111111;
+ background: #7A7979;
  z-index: 1;
  top: 0px;
 }
