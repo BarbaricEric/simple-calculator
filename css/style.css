@@ -9,7 +9,7 @@
  padding: 0;
  scroll-behavior: smooth;
  font-family: 'Rancho', sans-serif;
- color: #FFFFFF;  
+ color: #F30060;  
 }
 
 h1 {
@@ -79,6 +79,10 @@ transform: translateX(-50%)
 .social-media-list {
  list-style: none;
  display: flex;
+}
+
+.social-media-list li {
+ color: #F30060;
 }
 
 .banner-logo {
@@ -153,6 +157,39 @@ transform: translateX(-50%)
  }
 }
 
+  }
+}  
+
+
+@media screen and (max-width: 320px) {
+ .banner-logo {
+    display: none;
+ }
+  
+ .support-btn {
+ width: 50px;
+ height: 50px;
+ }
+  
+ .support-btn i {
+    line-height: 50px;
+    font-size: 30px;
+ }
+  
+  .main {
+    padding: 40px 0px 10px;
+  }
+  
+  .table {
+    top: 50%;
+  } 
+    
+@media screen and (max-width: 500px) {
+  .table {
+  top: 40%;
+  }
+}  
+
 @media screen and (max-width: 823px) {
  .support-btn {
   width: 60px;
@@ -172,34 +209,3 @@ transform: translateX(-50%)
   top: 80%;
   }*/
 }
-
-@media screen and (max-width: 500px) {
-  /*.table {
-  top: 70%;
-  }*/
-}  
-
-
-@media screen and (max-device-width: 320px) {
- .banner-logo {
-    display: none;
- }
-  
- .support-btn {
- width: 50px;
- height: 50px;
- }
-  
- .support-btn i {
-    line-height: 50px;
-    font-size: 30px;
- }
-  
-  .main {
-    padding: 40px 0px 10px;
-  }
-  
-  /*.table {
-    top: 50%;
-  } */
-}  
