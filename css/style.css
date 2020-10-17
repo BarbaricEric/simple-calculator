@@ -154,7 +154,7 @@ transform: translateX(-50%)
  }
 }
 
-@media (max-device-width: 320px) {
+@media (min-device-width: 320px) {
  .banner-logo {
     display: none;
  }
@@ -178,7 +178,7 @@ transform: translateX(-50%)
   } 
 }  
 
-@media(max-width: 500px) {
+@media(min-width: 500px) {
  .banner-support {
     position: fixed;
     width: 70%;
@@ -222,7 +222,7 @@ transform: translateX(-50%)
  }
 }
 
-@media screen and (max-width: 823px) {
+@media screen and (min-width: 823px) {
  .support-btn {
   width: 60px;
   height: 60px;
