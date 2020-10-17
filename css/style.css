@@ -9,12 +9,13 @@
  padding: 0;
  scroll-behavior: smooth;
  font-family: 'Rancho', sans-serif;
- background: #111111;
+ background: #FFFFFF;
  color: #FFFFFF;  
 }
 
 h1 {
-  margin-bottom: 20px;
+  margin: 20px;
+  color: #111111;
 }
 
 .button {
@@ -23,14 +24,14 @@ h1 {
  font-size: 25px;
  margin: 5px;
  cursor: pointer;
-  background: #000000;
-  border-radius: 8px;
-  align-items: center; 
-  justify-content: center;
-  text-decoration: none;
-  box-shadow: 6px 6px 10px -1px rgba(0.26,0.26,0.26,0.26), -6px -6px 10px -1px rgba(0.26,0.26,0,0.26);
-  border: 1px solid rgba(0.26,0.26,0.26,0.26); 
-  transition: transform 0.5s;
+ background: #000000;
+ border-radius: 8px;
+ align-items: center; 
+ justify-content: center;
+ text-decoration: none;
+  /*box-shadow: 6px 6px 10px -1px rgba(0.26,0.26,0.26,0.26), -6px -6px 10px -1px rgba(0.26,0.26,0,0.26);*/
+ border: 1px solid rgba(0.26,0.26,0.26,0.26); 
+ transition: transform 0.5s;
 }
 
 .button:hover, .button:active {
@@ -67,31 +68,31 @@ transform: translateX(-50%)
  position: fixed;
  width: 100%;
  height: 200px;
- padding: 0 100px;
+ /*padding 0 100px;*/
  display: flex;
  justify-content: center;
  align-items: center;
- background: #111111;
+ background: #3E3E3E;
  z-index: 1;
- top: 0px;
+ bottom: 0px; 
+}
+
+.social-media-list {
+ list-style: none;
+ display: flex;
 }
 
 .banner-logo {
  position: fixed;
- top: 50px;
- left: 30px;
- width: 80px;
- height: 80px; 
- /*height: 50px;
- width: 50px; 
- padding: 0 900px 0 100px;*/
+ bottom: 50px;
+ left: 30px; 
 }
 
 .browser-support-icon {
  position: absolute;
  top: 50%;
  transform: translateY(-50%);
- width: 100;
+ /* width: 100; */
  text-align: center;
 }  
 
@@ -157,17 +158,21 @@ transform: translateX(-50%)
  .banner-logo {
     display: none;
  }
+  
  .support-btn {
  width: 50px;
  height: 50px;
  }
+  
  .support-btn i {
     line-height: 50px;
     font-size: 30px;
  }
+  
   .main {
     padding: 40px 0px 10px;
   }
+  
   .table {
     top: 50%;
   } 
@@ -215,4 +220,24 @@ transform: translateX(-50%)
  .social-media-icon { 
   margin-left: 20px;
  }
+}
+
+@media screen and (max-width: 823px) {
+ .support-btn {
+  width: 60px;
+  height: 60px;
+ }
+
+.support-btn i {
+  line-height: 60px;
+  font-size: 40px;
+ }
+ 
+ .banner-logo {
+  display: none;
+ }
+  
+ .table {
+  top:80%;
+  }
 }
