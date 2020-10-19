@@ -14,6 +14,7 @@
 
 h1 {
   color: #111111;
+  margin: 10px;
 }
 
 .button {
@@ -57,7 +58,7 @@ h1 {
 
 .table {
 position: absolute;
-top: 40%;
+height: 40vh;
 left: 50%;
 transform: translateX(-50%) 
 }
@@ -160,8 +161,35 @@ transform: translateX(-50%)
   }
 }  
 
+@media screen and (min-device-width: 1200px) {
 
-@media screen and (max-width: 320px) {
+}
+
+@media screen and (min-device-width: 1024px) {
+
+}
+
+@media screen and (min-device-width: 640px) {
+  .support-btn {
+  width: 60px;
+  height: 60px;
+ }
+
+.support-btn i {
+  line-height: 60px;
+  font-size: 40px;
+ }
+ 
+ .banner-logo {
+  display: none;
+ }  
+}
+
+@media screen and (min-device-width: 540px) {
+
+}
+
+@media screen and (min-device-width: 320px) {
  .banner-logo {
     display: none;
  }
@@ -179,33 +207,6 @@ transform: translateX(-50%)
   .main {
     padding: 40px 0px 10px;
   }
-  
-  .table {
-    top: 50%;
-  } 
-    
-@media screen and (321px <= width <= 500px) {
-  .table {
-  top: 40%;
-  }
-}  
-
-@media screen and (501px <= width <= 1366px) {
- .support-btn {
-  width: 60px;
-  height: 60px;
- }
-
-.support-btn i {
-  line-height: 60px;
-  font-size: 40px;
- }
- 
- .banner-logo {
-  display: none;
- }
-  
- .table {
-  top: 25%;
-  }
 }
+
+
